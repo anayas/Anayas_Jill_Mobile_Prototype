@@ -1,0 +1,132 @@
+<!doctype html>  
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+	
+	<title>OpenFarmTech.org</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+			
+	
+</head>
+
+<body onload="GetMap();" onBeforeUnload="ExitPage();">
+	<div id="myMap" ></div>
+	
+		<div data-role="page" id="home" data-add-back-btn="true">
+			<div data-role="header" data-position="fixed" data-theme="a">
+				<h1>OpenFarmTech.org</h1>
+				
+			</div>
+			<div data-role="content"data-theme="a">
+							
+				<aside><a href="index.html">
+					<img width="81" height="57" src="images/logo.png" alt="tractor logo">
+					
+				</a></aside>
+				
+				
+				
+						
+				<ul data-role="listview" data-inset="false" data-filter="true" data-theme="e">
+					<li>
+						<h2><span>Related Searches</span></h2>
+					</li>
+					<li><a href="http://openfarmtech.org/?ga=SbZisU1LS3Qc8fna2ysYyd9ZTcgeBBazvPuIw%2Frm7OtxGqGzUHzeRpzhyUHbDCs7WfFYIPQsZvDPtkMe1p1WLLeCdSprT%2BKXpX3X51KscV9aLp8Tn%2F0tdnx%2Fsp0HD8dnCWVI5cXi%2FsxX6cGD1Hw7GTPoIC6EaIpryEKGdhBEO%2FfFihu9nmid49wZyohRmXNBNyyv9%2BO80%2FdekN%2BCEnZJEw%3D%3D&gqsg=jVFVw21u5L0YYvQLecWzT0pzbT1bXDm2hYglV0YVsguK7Pq7OYFLU0ujPmAbhUvR&maxads=0&gerf=ZKLxFVk6sabsZlt3Sml9bjA6ExPgOf1BO%2FDQAZi3Gio%3D&&gq=Tractors%20Farm%20Equipment&gktk=AG06ipCmlEthYJfayanLEjHS7Egrnl8QnAoTCKKmrfPnm7QCFe5a7Aod3UYAwhgFIAA4NVDd0aABUOTaxAlQrKanDlCmqqgOUIryqA5QtO_iDlDP_pgPUNP_mA9Q4OvOD1DP7M4PUNPszg9Qm9HXD1DLutwPUM_J7A9Qkav2D1DygPcPUPjNlhFQwLe1EVCDurURUKP41hFQ1PbuElCO7f8TUKLt_xNQveXpFVC3veUWUIbrhBtQ8KC5HVD-rbkdUKvG_x5QobqRIVDC2ZEhUIOcrSlQgN2IogFQqpbzwAFQupnzwAFQo4y_8gJQvObImgNQ-4rJnQNQ96bKnQNQx4PTnQNQhMfYnQNo3dGgAXFSwa3Z3TTXQoIBEwjlgrDz55u0AhVGXuwKHRkTAJ2NAQPfI9-RAciAFNM8Q8AM&gks=111&gki=1"> 
+						<h3>Farm Equipment</h3>
+					</a></li>
+					<li><a href="http://openfarmtech.org/?ga=L%2FkSmHdgCaPubHk5VYuVx8Dpvyn0wk9X%2FqkH5a0YmKUyAelbVGv2iW2SzkcpJhwnJbkhGDXzCrXTF8OZRrRItVQAdF%2FCmu98F8vcY3ThgitAkLshUt50tZyrqMNX4b0d33Ly%2B7SDKTAXLDmY31RVkQ%2BBS04H74q8kUrnxnOkKNCqdnf7oIrGwUyKqYxdjhYsAVaa97u8U%2FORE97zE6fh4g%3D%3D&gqsg=ZL7Cm2NGUV1o29%2FOnOa20WRnhx2rWw5v0YgAMRaSq2n08wN6QMhDzPE3fsKcwxsG&maxads=0&gerf=yPjb9sng5DBpgyfEk7lLWdTQqfViThWTHl75p3RAd8c%3D&&gq=Cheap%20Farm%20Land&gktk=AG06ipDHvkFfd2V4zZJWU6alLHxzuRfxxQoTCOXq4YLom7QCFY4s7AodNjoAsBgFIAE4NVDc0aABUKympw5QpqqoDlCK8qgOUKOUrQ5Q0--zDlC07-IOUM_-mA9Q0_-YD1Dg684PUM_szg9Q0-zOD1Cb0dcPUMu63A9Qkav2D1DygPcPUP3v-xBQ-M2WEVDdubURUOO5tRFQhLq1EVCj-NYRUNT27hJQtaCmE1CO7f8TUKHt_xNQveXpFVC3veUWUIbrhBtQ1IWNHVDwoLkdUKvG_x5QobqRIVDC2ZEhUIOcrSlQgN2IogFQ3LyqpwFQqpbzwAFQupnzwAFQo4y_8gJQvObImgNQ8IrJnQNQ96bKnQNQx4PTnQNo3NGgAXFuoLz0cku1ZoIBEwi02uWC6Ju0AhVHWuwKHYAXAHCNAeJ02WSRAciAFNM8Q8AM&gks=111&gki=2"> 
+						<h3>Farm Land</h3>
+					</a></li>
+					<li><a href="http://openfarmtech.org/?ga=C9BXQxr0BDCnUmiTX3y9zZgUy%2ByWSk%2FN4NHRdIbkE9VSV%2Ba0MgW6NBtyp9R5UAKISDlyQ2YC20bWPZ0U7vHBw1GNMIM1mZsV3ZfYTnMJDZzwurXjgsiVfbE78J%2FX7PCxmycXzeAb6ymt7rD%2F5jXfayub4e3tKBsUGPTw3JDHGWpz9NG%2BP8MPTKgtCETwvkJrkQFyFKK%2FuS83xx0kOvkRlg%3D%3D&gqsg=oChH0lqhj2kNIqaDZQS3ibXNbtuGuBneOYHPEebCpeMYuHkWzAUGqcf%2BPxcHy%2Bis&maxads=0&gerf=GaYqjptZNlc%2FQVMOmQClBh6lKDXG%2B9VInO7%2Bc8jOFD4%3D&&gq=You%20Tube%20Video%20Clip&gktk=AG06ipCgHoHZey_niEzqBcjURLNJf5n52woTCMuG-v_om7QCFe5a7Aod3UYAwhgFIAM4NVDd0aABUKyPogFQrKanDlCmqqgOUIryqA5QtO_iDlDP_pgPUNP_mA9Q4OvOD1DP7M4PUNPszg9Qm9HXD1DLutwPUJGr9g9Q8oD3D1D83oERUPjNlhFQg7q1EVCj-NYRUPrW5hJQ1PbuElC1oKYTUI7t_xNQveXpFVC3veUWULqDxRhQhuuEG1DwoLkdUKvG_x5QobqRIVCDnK0pUPugrylQgN2IogFQqpbzwAFQupnzwAFQo4y_8gJQvObImgNQ96bKnQNQx4PTnQNo3dGgAWisj6IBcenQz33HFlVbggETCN3n-v_om7QCFdBd7Aodp0oAfo0BROgdcpEByIAU0zxDwAw&gks=111&gki=4"> 
+						<h3>Video Clips</h3>
+					</a></li>
+					<li><a href="http://openfarmtech.org/?ga=wNkvU8%2B2fhszHSBJBufe1ak%2FjfzR8MEWyPd%2FrP5aHkt8ZL1wr2hBlNPt5s4NooiY8S4bd0lFWc%2FWJrHWn9iJlqT1zgZZAPemps0CMZwF6mPXXf6q%2FfPXpYGmgdRGGf%2BO9Hd0j2tflMk1s7PKg5ifM46XnNb1%2Bu0IjqrIblh6PwCJHdpsWsxZS%2FgW%2Fh%2BnzZZi3asOM28Vq6hPFbep1g%2Bc7w%3D%3D&gqsg=z3jw%2BN4Qfs0%2F8YWNyBLnoir%2FIeVKl%2BNvdzQE2IPh3chBpTx1mL5PyD7OvbwE3uRl&maxads=0&gerf=2IhHNsZtBnOdT%2FSBG9Zg0Db9hJZck2cx0cgQ5zh7bf4%3D&&gq=ERP%20Open%20Source&gktk=AG06ipC0AeGX64FnvFxeR_2AmqduigFsngoTCJCzgZDpm7QCFYEj7Aod9EgAuxgFIAI4DVDd0aABUKuPogFQrKanDlCmqqgOUIryqA5QtO_iDlDP_pgPUNP_mA9Q4OvOD1DP7M4PUNPszg9Qm9HXD1DLutwPUJGr9g9Q8oD3D1D87_sQUPjNlhFQwLe1EVCDurURUKP41hFQ1PbuElCuoKYTUI7t_xNQveXpFVC3veUWUIbrhBtQ8KC5HVCrxv8eUKG6kSFQgeD0IlCDnK0pUIDdiKIBUKqW88ABULqZ88ABUKOMv_ICUIXmyJoDULXmyJoDULzmyJoDUPemyp0DUMeD050DaN3RoAFoq4-iAXG_PE2p7pLfZ4IBEwjGpYKQ6Zu0AhXLXuwKHY1RAOWNAeSbNsKRARTd5C7Q6mTT&gks=111&gki=3"> 
+						<h3>ERP Open Source</h3>
+					</a></li>
+					<li><a href="http://openfarmtech.org/?ga=SbZisU1LS3Qc8fna2ysYyd9ZTcgeBBazvPuIw%2Frm7OtxGqGzUHzeRpzhyUHbDCs7WfFYIPQsZvDPtkMe1p1WLLeCdSprT%2BKXpX3X51KscV9aLp8Tn%2F0tdnx%2Fsp0HD8dnCWVI5cXi%2FsxX6cGD1Hw7GTPoIC6EaIpryEKGdhBEO%2FfFihu9nmid49wZyohRmXNBNyyv9%2BO80%2FdekN%2BCEnZJEw%3D%3D&gqsg=jVFVw21u5L0YYvQLecWzT0pzbT1bXDm2hYglV0YVsguK7Pq7OYFLU0ujPmAbhUvR&maxads=0&gerf=ZKLxFVk6sabsZlt3Sml9bjA6ExPgOf1BO%2FDQAZi3Gio%3D&&gq=Tractors%20Farm%20Equipment&gktk=AG06ipCmlEthYJfayanLEjHS7Egrnl8QnAoTCKKmrfPnm7QCFe5a7Aod3UYAwhgFIAA4NVDd0aABUOTaxAlQrKanDlCmqqgOUIryqA5QtO_iDlDP_pgPUNP_mA9Q4OvOD1DP7M4PUNPszg9Qm9HXD1DLutwPUM_J7A9Qkav2D1DygPcPUPjNlhFQwLe1EVCDurURUKP41hFQ1PbuElCO7f8TUKLt_xNQveXpFVC3veUWUIbrhBtQ8KC5HVD-rbkdUKvG_x5QobqRIVDC2ZEhUIOcrSlQgN2IogFQqpbzwAFQupnzwAFQo4y_8gJQvObImgNQ-4rJnQNQ96bKnQNQx4PTnQNQhMfYnQNo3dGgAXFSwa3Z3TTXQoIBEwjlgrDz55u0AhVGXuwKHRkTAJ2NAQPfI9-RAciAFNM8Q8AM&gks=111&gki=1"> 
+						<h3>Hobby CNC Software</h3>
+					</a></li>
+					<li><a href="http://openfarmtech.org/?ga=L%2FkSmHdgCaPubHk5VYuVx8Dpvyn0wk9X%2FqkH5a0YmKUyAelbVGv2iW2SzkcpJhwnJbkhGDXzCrXTF8OZRrRItVQAdF%2FCmu98F8vcY3ThgitAkLshUt50tZyrqMNX4b0d33Ly%2B7SDKTAXLDmY31RVkQ%2BBS04H74q8kUrnxnOkKNCqdnf7oIrGwUyKqYxdjhYsAVaa97u8U%2FORE97zE6fh4g%3D%3D&gqsg=ZL7Cm2NGUV1o29%2FOnOa20WRnhx2rWw5v0YgAMRaSq2n08wN6QMhDzPE3fsKcwxsG&maxads=0&gerf=yPjb9sng5DBpgyfEk7lLWdTQqfViThWTHl75p3RAd8c%3D&&gq=Cheap%20Farm%20Land&gktk=AG06ipDHvkFfd2V4zZJWU6alLHxzuRfxxQoTCOXq4YLom7QCFY4s7AodNjoAsBgFIAE4NVDc0aABUKympw5QpqqoDlCK8qgOUKOUrQ5Q0--zDlC07-IOUM_-mA9Q0_-YD1Dg684PUM_szg9Q0-zOD1Cb0dcPUMu63A9Qkav2D1DygPcPUP3v-xBQ-M2WEVDdubURUOO5tRFQhLq1EVCj-NYRUNT27hJQtaCmE1CO7f8TUKHt_xNQveXpFVC3veUWUIbrhBtQ1IWNHVDwoLkdUKvG_x5QobqRIVDC2ZEhUIOcrSlQgN2IogFQ3LyqpwFQqpbzwAFQupnzwAFQo4y_8gJQvObImgNQ8IrJnQNQ96bKnQNQx4PTnQNo3NGgAXFuoLz0cku1ZoIBEwi02uWC6Ju0AhVHWuwKHYAXAHCNAeJ02WSRAciAFNM8Q8AM&gks=111&gki=2"> 
+						<h3>Annealing Furnace</h3>
+					</a></li>
+					<li><a href="http://openfarmtech.org/?ga=C9BXQxr0BDCnUmiTX3y9zZgUy%2ByWSk%2FN4NHRdIbkE9VSV%2Ba0MgW6NBtyp9R5UAKISDlyQ2YC20bWPZ0U7vHBw1GNMIM1mZsV3ZfYTnMJDZzwurXjgsiVfbE78J%2FX7PCxmycXzeAb6ymt7rD%2F5jXfayub4e3tKBsUGPTw3JDHGWpz9NG%2BP8MPTKgtCETwvkJrkQFyFKK%2FuS83xx0kOvkRlg%3D%3D&gqsg=oChH0lqhj2kNIqaDZQS3ibXNbtuGuBneOYHPEebCpeMYuHkWzAUGqcf%2BPxcHy%2Bis&maxads=0&gerf=GaYqjptZNlc%2FQVMOmQClBh6lKDXG%2B9VInO7%2Bc8jOFD4%3D&&gq=You%20Tube%20Video%20Clip&gktk=AG06ipCgHoHZey_niEzqBcjURLNJf5n52woTCMuG-v_om7QCFe5a7Aod3UYAwhgFIAM4NVDd0aABUKyPogFQrKanDlCmqqgOUIryqA5QtO_iDlDP_pgPUNP_mA9Q4OvOD1DP7M4PUNPszg9Qm9HXD1DLutwPUJGr9g9Q8oD3D1D83oERUPjNlhFQg7q1EVCj-NYRUPrW5hJQ1PbuElC1oKYTUI7t_xNQveXpFVC3veUWULqDxRhQhuuEG1DwoLkdUKvG_x5QobqRIVCDnK0pUPugrylQgN2IogFQqpbzwAFQupnzwAFQo4y_8gJQvObImgNQ96bKnQNQx4PTnQNo3dGgAWisj6IBcenQz33HFlVbggETCN3n-v_om7QCFdBd7Aodp0oAfo0BROgdcpEByIAU0zxDwAw&gks=111&gki=4"> 
+						<h3>Video Clips</h3>
+					</a></li>
+					<li><a href="http://openfarmtech.org/?ga=wNkvU8%2B2fhszHSBJBufe1ak%2FjfzR8MEWyPd%2FrP5aHkt8ZL1wr2hBlNPt5s4NooiY8S4bd0lFWc%2FWJrHWn9iJlqT1zgZZAPemps0CMZwF6mPXXf6q%2FfPXpYGmgdRGGf%2BO9Hd0j2tflMk1s7PKg5ifM46XnNb1%2Bu0IjqrIblh6PwCJHdpsWsxZS%2FgW%2Fh%2BnzZZi3asOM28Vq6hPFbep1g%2Bc7w%3D%3D&gqsg=z3jw%2BN4Qfs0%2F8YWNyBLnoir%2FIeVKl%2BNvdzQE2IPh3chBpTx1mL5PyD7OvbwE3uRl&maxads=0&gerf=2IhHNsZtBnOdT%2FSBG9Zg0Db9hJZck2cx0cgQ5zh7bf4%3D&&gq=ERP%20Open%20Source&gktk=AG06ipC0AeGX64FnvFxeR_2AmqduigFsngoTCJCzgZDpm7QCFYEj7Aod9EgAuxgFIAI4DVDd0aABUKuPogFQrKanDlCmqqgOUIryqA5QtO_iDlDP_pgPUNP_mA9Q4OvOD1DP7M4PUNPszg9Qm9HXD1DLutwPUJGr9g9Q8oD3D1D87_sQUPjNlhFQwLe1EVCDurURUKP41hFQ1PbuElCuoKYTUI7t_xNQveXpFVC3veUWUIbrhBtQ8KC5HVCrxv8eUKG6kSFQgeD0IlCDnK0pUIDdiKIBUKqW88ABULqZ88ABUKOMv_ICUIXmyJoDULXmyJoDULzmyJoDUPemyp0DUMeD050DaN3RoAFoq4-iAXG_PE2p7pLfZ4IBEwjGpYKQ6Zu0AhXLXuwKHY1RAOWNAeSbNsKRARTd5C7Q6mTT&gks=111&gki=3"> 
+						<h3>Furnace Refractory</h3>
+					</a></li>
+				</ul>
+			</div>
+				
+			<div data-role="footer" data-position="fixed">
+			<section>
+			<ul>
+				<li class="copyright">Jill Anayas | Full Sail University | Copyright &copy 2012</li>
+				<li class="icons"><a href="https://twitter.com/JillianAnayas"><img width="25" height="25" title="Twitter" alt="Twitter" src="images/twitterSquare.png" ></a></li>
+				<li class="icons"><a href="http://www.linkedin.com/in/jilliananayas"><img width="25" height="27" title="linkedin" alt="Linkedin" src="images/linkedinSquare.png"></a></li>
+				<li class="icons"><a href="mailto:jillianAnayas@gmail.com"><img width="25" height="30" title="Email Jill Anayas" alt="Email Jill Anayas" src="images/email48x48.png"></a></li>
+			</ul>
+		</section>
+				<!-- <h4>Full Sail University MDD 2012</h4> -->
+				
+			</div>
+		</div>
+	<footer>
+		
+	</footer>
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar" data-theme="a">
+				<ul>
+					<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+				</ul>
+			</div>
+		</div>
+			<a href="#note" id="rberrorslink" data-rel="dialog" data-transition="pop">Open Errors</a>
+					
+				</form>
+				
+			</div><!--/content -->
+		
+		</div><!-- /contact form -->
+		
+		<div data-role="dialog" id="note" data-add-back-btn="true">
+			<div data-role="header" data-position="fixed">
+				<h1>Missing Fields</h1>
+			</div>
+			
+			<div data-role="content">
+				<ul>
+					<li>Test.</li>
+				</ul>
+			</div>
+		</div>
+								
+		
+					
+		
+
+
+
+	
+
+	<!-- JavaScript here -->
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+	<script src="js/libs/modernizr.custom.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+  
+</body>
+</html>
