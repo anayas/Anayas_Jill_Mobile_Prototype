@@ -1,0 +1,151 @@
+/*  custom styles */
+
+/* Header Text */
+.ui-header-fixed{
+  font-family: calibri;
+	font-size: 10px;
+	letter-spacing: 2px;
+}
+
+
+/* Search Bar Background Area */
+.ui-body-a, .ui-overlay-a {
+    background: linear-gradient(#6f994b, #6f994b) repeat scroll 0 0 #6f994b;
+}
+/* Search bar */
+.ui-bar-c {
+	background: linear-gradient(#6f994b, #6f994b); 
+}
+
+/* text inside search bar */
+.ui-input-search input.ui-input-text{
+	color: #203954;
+	
+}
+/* entire search bar */
+.ui-listview-filter {
+	width: 60%;
+	margin: 0 auto; 
+	margin-left: 90px;
+	margin-bottom: 28px;
+	position: static;
+}
+/* Inside Search Bar */
+.ui-body-c, .ui-overlay-c{
+	background: linear-gradient(#fdf8c1, #fdf8c1);
+	border: solid 1px #fdf8c1; 
+}
+/* font on header/footer */
+.ui-bar-a {
+	background: linear-gradient(#203954, #203954);
+}
+h3{
+	color: #fdf8c1;
+	font-family: arial;
+	text-shadow: none;
+}
+/* buttonBg */
+.ui-btn-text{
+	background: linear-gradient(#203954, #203954);
+}
+/* List Text */
+.ui-li-heading{
+	font-family: arial;
+	color: #fdf8c1;
+	letter-spacing: 2px;
+	font-weight: none;
+	text-shadow: none;
+}
+/* Lines in between list items */
+.ui-btn-up-e {
+    background: linear-gradient(#203954, #203954) repeat scroll 0 0 #203954;
+    border: 0px solid #203954;
+}
+.ui-btn-inner {
+    background-color: #203954; 
+    display: inline;
+    padding: 0;
+    position: relative;
+
+}
+/* List background color */
+.ui-btn-up-e:visited, .ui-btn-up-e a.ui-link-inherit {
+	background-color: #6f994b;
+}
+/* Search Icon on Search Bar */
+.ui-icon-search, .ui-icon-searchfield:after {
+	background-color: #203954;
+	color: #fdf8c1;
+	text-shadow: none;
+	
+}
+/* Footer */
+.ui-footer-fixed{
+	background-color: #6f994b
+}
+/* footer font */
+.ui-bar-a{
+	color: #c8cc6b;
+}
+
+h3{
+	font-size: 20px;
+	float: left;
+}
+/* logo */
+aside{
+	float: left;
+	margin-top: -10px;
+	margin-right: 25px;
+	background-color: #6f994b;
+	
+}
+/* Related Searches BG */
+.ui-btn-up-e {
+    background: linear-gradient(#c8cc6b, #c8cc6b); /* repeat scroll 0 0 #c8cc6b; */
+    /* border: 0 solid #c8cc6b; */
+}
+/* Related Searches Text */
+h2 span{
+    color: #203954;
+    font-family: arial;
+    letter-spacing: 2px;
+    text-shadow: none;
+   
+}
+/* List Background size */
+.ui-li .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li{
+	height: 25px;
+}
+
+/* List Font */
+.ui-btn-up-e:visited, .ui-btn-up-e a.ui-link-inherit{
+	color: #203954;
+	text-shadow: none;
+	clear: both;
+}
+/* Visited link color */
+.ui-btn-up-e:visited, .ui-btn-up-e a.ui-link-inherit {
+	color: none;
+}
+
+.ui-header .ui-title, .ui-footer .ui-title {
+    margin: 0 auto;
+    padding: 10px 0;
+    
+}
+section ul li {
+	list-style: none;
+	font-size: 9px;
+	float:left;
+	margin-top: 10px;
+}
+section ul li a{
+	margin: -10px 0 0 3px;
+}
+.icons{
+	float: right;
+	margin-right: 5px;
+	clear: left;
+	display: inline;
+}
